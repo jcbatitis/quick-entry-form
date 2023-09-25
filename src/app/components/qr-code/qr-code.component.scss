@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: color(srgb 0.6511 0.8557 0.8348);
+  mat-card {
+    margin: 10px 10px 0;
+  }
+}

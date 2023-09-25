@@ -1,0 +1,39 @@
+<div style="margin: 10px">
+  <button routerLink="/qr" mat-mini-fab color="secondary">
+    <mat-icon>home</mat-icon>
+  </button>
+</div>
+<pdf-viewer
+  src="../assets/UE_Consent_Form.pdf"
+  [render-text]="true"
+  [original-size]="false"
+></pdf-viewer>
+
+<mat-card>
+  <div class="form">
+    <mat-form-field appearance="fill">
+      <mat-label>Date</mat-label>
+      <input matInput [matDatepicker]="dp1" disabled [(ngModel)]="dateToday" />
+      <mat-datepicker-toggle matSuffix [for]="dp1"></mat-datepicker-toggle>
+      <mat-datepicker #dp1></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label class="label">Usability Consultant</mat-label>
+      <input matInput [(ngModel)]="consultant" disabled />
+    </mat-form-field>
+
+    <div class="control control--col">
+      <div class="label">
+        <label>Signature</label>
+      </div>
+      <div class="field">
+        <canvas id="signature-pad" class="signature-pad" #canvas></canvas>
+      </div>
+    </div>
+    <div class="button-container">
+      <button mat-raised-button color="secondary">Clear</button>
+      <button mat-raised-button color="primary">Save</button>
+    </div>
+  </div>
+</mat-card>

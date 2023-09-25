@@ -1,0 +1,46 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  background: color(srgb 0.6511 0.8557 0.8348);
+  pdf-viewer {
+    padding: 10px 10px 0;
+  }
+
+  canvas {
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  mat-card {
+    margin: 0 10px 10px;
+  }
+
+  .form {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .control {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+    .label {
+      font-family: Roboto, "Helvetica Neue", sans-serif;
+    }
+
+    &--col {
+      flex-direction: column;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+}

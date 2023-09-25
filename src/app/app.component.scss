@@ -1,0 +1,12 @@
+pdf-viewer {
+  height: 100%;
+  width: 100%;
+}
+
+canvas {
+  box-sizing: border-box;
+  border: 1px solid black;
+
+  width: 550px !important;
+  height: 300px !important;
+}
